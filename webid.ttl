@@ -1,0 +1,34 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cert: <http://www.w3.org/ns/auth/cert#> .
+@prefix rdfs: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<> a foaf:PersonalProfileDocument ;
+   foaf:maker <#this> ;
+   foaf:primaryTopic <#this> .
+
+<#this> a foaf:Person ;
+   foaf:name "Bilal Ben Mahria";
+ cert:key [
+      a cert:RSAPublicKey;
+      rdfs:label "";
+      cert:modulus "C474C10AD2135D5A7A15ECB6D7F9
+                    4ADCA4AD66610A563F1A891A538CB4
+                    7B3B005C8A085C26420FCDE9E45F97
+                    3D3F9BC0515D788C6A91C54E48995C
+                    A9FB222B4D6C3490037992D629F6B2
+                     82375E81E48C51BC67E29C1FD02EE7
+                     87CB6415673D3B7C8782A687973E6E
+                     D18D278FCCC668436E79D93951BFE4
+                     54F05473DD0184E36BF36E1FCDB960
+                     A49E45BB99A2DE9855C0F86B955995
+                     C641EE93164380873D5DCEE719E0E4
+                     985CC6F51A7E5E920485596454799C
+                     0B756F3CED200E175009C588750DB9
+                     7B9228B4CC82C675F76B2E8928DAAE
+                     86C5B5B626E86F8BC78928A5DABE37
+                     7A54D521E0DB1BA61EA4DB875E44AC
+                     D493710846B70A41EE74C429E0D753
+                     F4E9"^^xsd:hexBinary;
+      cert:exponent "65537"^^xsd:nonNegativeInteger
+     ] .
